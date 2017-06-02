@@ -22,14 +22,14 @@ export const store = new Vuex.Store({
    //      { name: 'zhz', time: '15:30', message: 'wo shi zhu hao zheng', img: '#'}]
 	},
 	mutations: {
-		UPDATALIST: function (state, payload) {
+		[UPDATALIST] (state, payload) {
 		  state.datalist.push(payload.item)
 		}
 	},
 	actions: {
-		updata: function (context, payload) {
+		updata ({commit}, payload) {
 		  if(payload.item.message) {
-			  context.commit('UPDATALIST', payload)
+			  commit('UPDATALIST', payload)
 			}	
 		}
 	}
