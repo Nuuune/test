@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <router-view :aldata="aldata"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,12 +10,6 @@ export default {
   name: 'app',
   beforeMount: function () {
     jQuery('body').css('height', jQuery(window).height())
-  },
-  props: [ 'datall' ],
-  data: function () {
-    return {
-      aldata: this.datall
-    }
   }
 }
 </script>

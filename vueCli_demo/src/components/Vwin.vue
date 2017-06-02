@@ -18,10 +18,9 @@
 <script>
 export default {
   name: 'vwin',
-  props: [ 'dataItems' ],
-  data: function () {
-    return {
-      items: this.dataItems
+  computed: {
+    items () {
+      return this.$store.state.datalist
     }
   },
   updated: function () {

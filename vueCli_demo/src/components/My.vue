@@ -1,24 +1,22 @@
 <template>
 <div>  
   <myNav></myNav>
-  <Vwin :dataItems="dataItems"></Vwin>
+  <Vwin></Vwin>
+  <Cwin></Cwin>
 </div>    
 </template> 
 
 <script>
 import myNav from './Nav.vue'
 import Vwin from './Vwin.vue'
+import Cwin from './Cwin.vue'
 
 export default {
-  props: [ 'aldata' ],
   name: 'myindex',
-  components: {myNav, Vwin},
-  data: function () {
-    return { dataItems: this.aldata }
-  }
+  components: {myNav, Vwin, Cwin}
 }
 </script>
 
 <style scoped>
-  div { height: 100%; }	
+  div { height: 100%; position: relative;}	
 </style>
