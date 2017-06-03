@@ -44,7 +44,6 @@ export default {
         message: message,
         img: img
       })
-
       this.message = ''
     }
   }

@@ -16,8 +16,13 @@
 </template>
 
 <script>
+import CHAT from '../api'
+
 export default {
   name: 'vwin',
+  created: function () {
+    CHAT.init()
+  },
   computed: {
     items () {
       return this.$store.state.datalist
