@@ -24,4 +24,19 @@ export default {
   padding-top: 50px;
   height: 100%;
 }
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  html {
+    font-size: 8px;
+  }
+}
 </style>

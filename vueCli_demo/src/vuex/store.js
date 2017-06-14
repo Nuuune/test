@@ -7,19 +7,8 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
 	state: {
-	  datalist: CHAT.msgo
-	  // [{name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      {name: 'lzy', time: '15:27', message: 'wo shi li zhi yong', img: '#'},
-   //      { name: 'zhz', time: '15:30', message: 'wo shi zhu hao zheng', img: '#'}]
+	  datalist: CHAT.msgo,
+	  fontlist: ["yah","sans","momo"]
 	},
 	mutations: {
 		[UPDATALIST] (state, payload) {

@@ -4,7 +4,7 @@
             <span class='input-group-btn'>
                 <button class="btn btn-default" type='button'>emoji</button>
             </span>
-            <input type='text' class="form-control" v-model="message" placeholder="say something ···">
+            <input type='text' class="form-control" v-model="message" @keyup.enter="send" placeholder="say something ···" />
             <span class='input-group-btn'>
                 <button class="btn btn-default" type='button' @click="send">ah-play</button>
             </span>
@@ -14,6 +14,7 @@
 
 <script>
 import CHAT from '../api'
+import headPhoto from '../assets/img/head01.png'
 
 export default {
   name: 'cwin',
@@ -27,7 +28,7 @@ export default {
       let message = this.message
       let time = new Date()
       let name = 'shepi'
-      let img = '#'
+      let img = headPhoto
 
   //  this.$store.dispatch({
   //    type: 'updata',

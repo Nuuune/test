@@ -12,7 +12,10 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a herf="#">字体</a></li>
+					<li class="dropdown"><a herf="#" data-toggle="dropdown" class="dropdown-toggle">字体</a>
+					<ul class="dropdown-menu">
+						<li v-for="item in fontlist">{{item}}</li>
+					</ul></li>
 					<li><a herf="#">颜色</a></li>
 					<li class="dropdown"><a herf="#" data-toggle="dropdown" class="dropdown-toggle">联系我们<span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -28,7 +31,12 @@
 
 <script>
 export default {
-  name: 'nav'
+  name: 'nav',
+  data () {
+    return {
+      fontlist: this.$store.state.fontlist
+    }
+  }
 }
 </script>
 
@@ -46,6 +54,7 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+  vertical-align: top;
 }
 
 a {
