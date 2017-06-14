@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0"
+  },
+  "scripts": {
+  	"star": "node server.js"
+  }
+}
