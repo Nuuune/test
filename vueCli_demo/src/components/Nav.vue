@@ -16,7 +16,10 @@
 					<ul class="dropdown-menu">
 						<li v-for="item in fontlist">{{item}}</li>
 					</ul></li>
-					<li><a herf="#">颜色</a></li>
+					<li class="dropdown"><a herf="#" data-toggle="dropdown" class="dropdown-toggle">颜色</a>
+					<ul class="dropdown-menu">
+						<li v-for="item in colorlist" :style="{color: item}">{{item}}</li>
+					</ul></li>
 					<li class="dropdown"><a herf="#" data-toggle="dropdown" class="dropdown-toggle">联系我们<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li>QQ</li>
@@ -34,7 +37,8 @@ export default {
   name: 'nav',
   data () {
     return {
-      fontlist: this.$store.state.fontlist
+      fontlist: this.$store.state.fontlist,
+      colorlist: this.$store.state.colorlist
     }
   }
 }

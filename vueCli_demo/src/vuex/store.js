@@ -8,7 +8,8 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
 	state: {
 	  datalist: CHAT.msgo,
-	  fontlist: ["yah","sans","momo"]
+	  fontlist: ["yah","sans","momo"],
+	  colorlist: ["red","yellow","pink"]
 	},
 	mutations: {
 		[UPDATALIST] (state, payload) {
