@@ -20,7 +20,7 @@
 					<ul class="dropdown-menu">
 						<li v-for="item in colorlist" :style="{color: item}">{{item}}</li>
 					</ul></li>
-					<li class="dropdown"><a herf="#" data-toggle="dropdown" class="dropdown-toggle">联系我们<span class="caret"></span></a>
+					<li class="dropdown"><a herf="#" data-toggle="dropdown" class="dropdown-toggle">联系我们</a>
 					<ul class="dropdown-menu">
 						<li>QQ</li>
 						<li>微信</li>
@@ -56,13 +56,42 @@ ul {
 }
 
 li {
-  display: inline-block;
   margin: 0 10px;
+}
+
+.dropdown-menu {
+	text-align: center;
+}
+
+.dropdown-menu>li {
+  display: inline-block;
   vertical-align: top;
 }
 
 a {
   color: #42b983;
   cursor: pointer;
+}
+
+nav {
+  background-color: #fba52e;
+  background-image: linear-gradient(to right, #e05067, #fba52e); 
+}
+
+.navbar-header a {
+	color: #fff;
+}
+
+a.dropdown-toggle {
+	transition: all .6s;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: transparent;
+	color: #fff;
 }
 </style>
