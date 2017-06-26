@@ -9,7 +9,7 @@ export const store = new Vuex.Store({
 	state: {
 	  datalist: CHAT.msgo,
 	  fontlist: ["yah","sans","momo"],
-	  colorlist: ["red","yellow","pink"]
+	  colorlist: ["red","yellow","pink","gray","blue","black","white","white","white","white","white","white","white","white"]
 	},
 	mutations: {
 		[UPDATALIST] (state, payload) {
