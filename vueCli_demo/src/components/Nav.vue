@@ -1,5 +1,5 @@
 <template>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default" role="navigation">
 		<div class="contain-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
@@ -75,7 +75,14 @@ a {
 
 nav {
   background-color: #fba52e;
-  background-image: linear-gradient(to right, #e05067, #fba52e); 
+  background-image: linear-gradient(to right, #e05067, #fba52e);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 1086; 
+  border: 0;
+  margin:0;
 }
 
 .navbar-header a {

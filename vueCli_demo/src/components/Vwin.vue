@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style scoped>
-.chatview { height: 90%; background: #000; box-sizing: border-box; overflow: auto;}
+.chatview { height: calc(100% - 34px); background: #000; box-sizing: border-box; overflow: auto; padding: 50px 0 0 0;}
 .chatview article { width: 100%; box-sizing: border-box; padding-left: 10px; margin: 10px 0; text-align: left;  position: relative;}
 .chatview article figure { color: #fff; padding-left: 5px; margin: 10px 0; width: 40%;}
 .chatview article figure img { display: inline-block; width: 4rem; height: 4rem; background: pink; border-radius: 50%;}

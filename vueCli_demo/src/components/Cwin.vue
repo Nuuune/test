@@ -51,6 +51,14 @@ export default {
 }
 </script>
 
-<style>
-	
+<style scoped>
+	footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  button {
+    height: 34px;
+  }
 </style>
